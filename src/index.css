@@ -1,0 +1,221 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #100d21;
+  color: #fff;
+  line-height: inherit;
+}
+
+button, input {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7047eb;
+  border-radius: 20px;
+}
+
+.dashboard-card {
+  border-radius: 0.75rem;
+  background-color: rgb(33 28 55);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.primary-button {
+  border-radius: 0.375rem;
+  background-color: rgb(112 71 235);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(255 255 255);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.primary-button:hover {
+  background-color: rgb(147 51 234);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.secondary-button {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: rgb(112 71 235);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: rgb(112 71 235);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.secondary-button:hover {
+  background-color: rgb(112 71 235);
+  color: rgb(255 255 255);
+}
+
+.page-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgb(255 255 255);
+}
+
+.page-subtitle {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(156 163 175);
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: rgb(23 19 43);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(255 255 255);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.input:focus {
+  border-color: rgb(112 71 235);
+}
+
+html.light, body.light, .light {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.light .dashboard-card {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 20px #0000000f !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light .text-gray-200, .light .text-gray-300 {
+  color: #334155 !important;
+}
+
+.light .text-gray-400 {
+  color: #475569 !important;
+}
+
+.light .text-gray-500 {
+  color: #64748b !important;
+}
+
+.light .page-title {
+  color: #0f172a !important;
+}
+
+.light .page-subtitle {
+  color: #475569 !important;
+}
+
+.light .input {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light .bg-dark-100 {
+  background-color: #ffffff !important;
+}
+
+.light .bg-dark-200 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+.light .bg-dark-300 {
+  background-color: #f1f5f9 !important;
+}
+
+.light .border-white\/10, .light .border-white\/5 {
+  border-color: #cbd5e1 !important;
+}
+
+.light .primary-button, .light .primary-button *,
+.light button.bg-purple-500, .light button.bg-purple-500 *,
+.light button.bg-red-500, .light button.bg-red-500 *,
+.light button.bg-primary, .light button.bg-primary *,
+.light button.bg-blue-600, .light button.bg-blue-600 *,
+.light button.bg-green-600, .light button.bg-green-600 *,
+.light .bg-primary, .light .bg-primary *,
+.light .bg-purple-500, .light .bg-red-500, .light .bg-blue-600, .light .bg-blue-500, .light .bg-green-500 {
+  color: #ffffff !important;
+}
+
+.hero-banner,
+.hero-banner *,
+.light .hero-banner,
+.light .hero-banner *,
+.light .hero-banner h1,
+.light .hero-banner h2,
+.light .hero-banner p,
+.light .hero-banner span,
+.light .hero-banner button {
+  color: #ffffff !important;
+}
+
+.hero-banner p,
+.light .hero-banner p {
+  color: #e9d5ff !important;
+}
+
+.light .bottom-navbar {
+  background-color: #ffffff !important;
+  border-top-color: #e2e8f0 !important;
+  box-shadow: 0 -4px 20px #0000000d !important;
+}
+
+.light .bottom-navbar a,
+.light .bottom-navbar button {
+  color: #64748b !important;
+}
+
+.light .bottom-navbar a.active,
+.light .bottom-navbar a.active *,
+.light .bottom-navbar a[class*="text-primary"],
+.light .bottom-navbar a[class*="text-primary"] * {
+  color: #7047eb !important;
+}
